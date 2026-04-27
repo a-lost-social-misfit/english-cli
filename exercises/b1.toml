@@ -1,0 +1,27 @@
+# english-cli 問題ファイル — B1レベル追加問題
+# このファイルに問題を追加すると、次回起動時から使われます
+# （将来実装予定：現在は english_cli.py 内の EXERCISES リストを直接編集）
+
+[[exercises]]
+id = "b1-pv-custom-01"
+level = "b1"
+category = "フレーズ動詞"
+instruction = "空欄に適切な副詞/前置詞を入れてください"
+prompt = "I need to ___ up early tomorrow for the flight.（早起きしなければならない）"
+answer = "wake"
+alternatives = ["get"]
+hint = "wake ___ = 目が覚める"
+explanation = "wake up = 目が覚める・起きる。get up も同義でよく使われます。"
+error_tags = ["phrasal_verb"]
+
+[[exercises]]
+id = "b1-id-custom-01"
+level = "b1"
+category = "イディオム"
+instruction = "空欄に適切な語を入れてイディオムを完成させてください"
+prompt = "She passed the exam with flying ___!（見事に合格した）"
+answer = "colours"
+alternatives = ["colors"]
+hint = "with flying ___ = 見事に・華々しく"
+explanation = "pass with flying colours = 見事に合格する・華々しく成功する（英）。colors（米）も可。"
+error_tags = ["idiom"]
