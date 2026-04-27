@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# データベース（個人の学習データ）
+*.db
+*.sqlite
+*.sqlite3
+
+# 設定・シークレット
+.env
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+*.swp
