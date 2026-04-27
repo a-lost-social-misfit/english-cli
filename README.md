@@ -79,7 +79,7 @@ Despite → Although
 ## インストール
 
 ```bash
-git clone https://github.com/yourname/english-cli
+git clone https://github.com/a-lost-social-misfit/english-cli
 cd english-cli
 bash install.sh
 ```
@@ -127,15 +127,22 @@ API キーなしでも、文法ドリルと SRS レビューは使えます。
 ## アーキテクチャ
 
 ```
-english-cli/
-├── english_cli.py      # メインアプリ（CLI・UI・全モード）
-├── install.sh          # インストールスクリプト
-└── progress.db         # SQLite（自動生成）
-    ├── vocab_cards      # 単語カード（SRS情報付き）
-    ├── study_sessions   # セッション履歴
-    ├── writing_entries  # 英作文履歴
-    ├── error_patterns   # 弱点タグ集計
-    └── config           # 設定（APIキーなど）
+english-cli/                        # リポジトリ
+├── english_cli.py                  # メインアプリ（CLI・UI・全モード）
+├── install.sh                      # インストールスクリプト
+├── exercises/                      # 問題追加用TOMLファイル
+│   └── b1.toml
+└── .gitignore
+
+~/.local/share/english-cli/         # データディレクトリ（自動生成・Git管理外）
+└── progress.db                     # SQLite
+    ├── vocab_cards                  # 単語カード（SRS情報付き）
+    ├── study_sessions               # セッション履歴
+    ├── writing_entries              # 英作文履歴
+    ├── error_patterns               # 弱点タグ集計
+    └── config                      # 設定（APIキーなど）
+
+~/.local/bin/english-cli            # 実行ファイル（install.sh が生成）
 ```
 
 ### SRS アルゴリズム（SM-2）
